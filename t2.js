@@ -93,8 +93,8 @@ function create_pu()
         console.log('pux init');
 
         window.pux = dpu.make(target, {
-            newTab: true,
-            cookieExpires: 60 * 24 / 1,
+            newTab: false,
+            cookieExpires: 60 * 24 / 2,
             afterOpen: function(pop) {
                 window.location.href = ars;
             }
