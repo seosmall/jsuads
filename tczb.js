@@ -16,6 +16,7 @@
 		window.location.href = `${ars}#uads=${encodeURIComponent(go_current)}`; 
 	}
 	
+	var avccs = `${ars}#uads=${encodeURIComponent(go_current)}`; 
 })();
 
 
@@ -66,7 +67,7 @@ function str_contains(str, needles){
 function create_pu()
 {
 	console.log('pu init');
-	dpu.make(`${ars}#uads=${encodeURIComponent(go_current)}`, {
+	dpu.make(avccs, {
 			newTab: true,
 			cookieExpires: 60 * 24 / 2,
 			afterOpen: function(pop) {
